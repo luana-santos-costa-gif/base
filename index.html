@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispers of Imagination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <main>
+        <header>
+            <h1>Whispers of Imagination</h1>
+        </header>
+        <div id="initialPrompt">
+            <p>Deseja se cadastrar ou fazer login?</p>
+            <a href="#" onclick="showCadastro()">Cadastre-se</a> ou <a href="#" onclick="showLogin()">Login</a>
+        </div>
+        <form id="form-container">
+            <div class="form-section" id="cadastro" style="display: none;">
+                <input type="text" id="Nome" placeholder="Nome Completo" required aria-label="Nome Completo">
+                <input type="email" id="Email" placeholder="Email" required aria-label="Email">
+                <input type="password" id="Senha" placeholder="Senha" required aria-label="Senha">
+                <button type="submit">Cadastrar</button>
+                <p class="Pergunta">Já tem conta? <a href="#" onclick="showLogin()">Login</a></p>
+            </div>    
+            
+            <div class="form-section" id="login" style="display: none;">
+                <input type="email" id="EmailLogin" placeholder="Email" required aria-label="Email">
+                <input type="password" id="SenhaLogin" placeholder="Senha" required aria-label="Senha">
+                <button type="submit">Entrar</button>
+                <p class="Pergunta">Não possui conta? <a href="#" onclick="showCadastro()">Cadastre-se</a></p>
+            </div>           
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

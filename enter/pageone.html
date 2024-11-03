@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispers of Imagination - Preferências</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Whispers of Imagination</h1>
+        </header>
+        <form id="preferences-form">
+            <label for="name">Escolha um nome de exibição:</label>
+            <input type="text" id="name" placeholder="Seu Nome" required>
+
+            <label>Quais gêneros de livro você prefere? (Selecione múltiplos)</label>
+            <div class="genre-container">
+                <label>
+                    <input type="checkbox" name="genre" value="fantasia"> Fantasia
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="romance"> Romance
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="suspense"> Suspense
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="ficcao-cientifica"> Ficção Científica
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="biografia"> Biografia
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="aventura"> Aventura
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="misterio"> Mistério
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="historia"> História
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="poesia"> Poesia
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="nao-ficcao"> Não Ficção
+                </label>
+            </div>
+
+            <fieldset>
+                <legend>Você quer:</legend>
+                <div class="action-container">
+                    <label>
+                        <input type="radio" name="action" value="ler" required> Apenas Ler
+                    </label>
+                    <label>
+                        <input type="radio" name="action" value="escrever"> Escrever e Ler
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="script.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Cor padrão do texto */
+    background-color: #f0f0f0; /* Cor de fundo da tela */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+header {
+    background-color: #6a0dad; /* Um tom de roxo para o cabeçalho */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+h2 {
+    color: #8a2be2; /* Um tom mais claro de roxo para os subtítulos */
+    margin-top: 20px; /* Espaçamento superior para separação */
+}
+
+#genre-list, #books-list, #saved-books-list, #history-list {
+    background-color: #e6e6fa; /* Um fundo suave para as listas */
+    border: 2px solid #9370db; /* Bordas em um tom médio de roxo */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.book-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #d8bfd8; /* Um tom suave de roxo para os itens do livro */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Adicionando uma leve animação */
+}
+
+.book-item:hover {
+    background-color: #ba55d3; /* Efeito de hover com um tom mais escuro */
+    transform: scale(1.02); /* Aumenta levemente o item ao passar o mouse */
+}
+
+button {
+    background-color: #6a0dad; /* Botão roxo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Adicionando uma leve animação */
+}
+
+button:hover {
+    background-color: #8a2be2; /* Tom mais claro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+/* Estilo para o menu do perfil */
+.profile-container {
+    position: relative; /* Necessário para o posicionamento do menu */
+}
+
+.profile-menu {
+    display: none; /* Esconder o menu por padrão */
+    position: absolute; /* Posiciona em relação ao elemento pai */
+    background-color: white; /* Fundo branco */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    right: 0; /* Posiciona à direita da imagem do perfil */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.profile-menu.show {
+    display: block; /* Mostra o menu quando a classe "show" é adicionada */
+}
+
+.profile-menu a {
+    display: block; /* Faz os links ocuparem toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.profile-menu a:hover {
+    background-color: #f0f0f0; /* Cor ao passar o mouse */
+}

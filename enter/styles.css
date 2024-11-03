@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5; /* Cor de fundo suave */
+}
+
+main {
+    background: rgba(232, 234, 246, 0.9); /* Fundo do formulário lavanda claro */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px; /* Largura máxima do formulário */
+}
+
+h1 {
+    text-align: center;
+    color: #9d5cec; /* Texto roxo escuro */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-top: 15px; /* Espaçamento acima dos rótulos */
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="checkbox"] {
+    margin: 5px 0; /* Espaçamento entre os inputs */
+}
+
+/* Estilização para a seção de gêneros e ações */
+.genre-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os gêneros se movam para a linha seguinte se não houver espaço */
+    margin-bottom: 15px; /* Espaço abaixo da lista de gêneros */
+}
+
+.genre-container label {
+    margin-right: 15px; /* Espaçamento entre os rótulos dos gêneros */
+}
+
+/* Alinhamento dos botões e formulários */
+button {
+    align-self: flex-start; /* Alinha o botão à esquerda */
+    margin-top: 20px; /* Espaço acima do botão */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7b1fa2; /* Cor do botão roxo médio */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a1b9a; /* Efeito hover com roxo intenso */
+}

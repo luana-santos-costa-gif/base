@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispers of Imagination - Tela Inicial</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Bem-vindo ao Whispers of Imagination!</h1>
+            <p id="user-greeting"></p>
+            <div class="profile-container">
+                <img id="profile-image" src="perfil.png" alt="Perfil" style="cursor:pointer;">
+                <div id="profile-menu" class="profile-menu">
+                    <a href="#" onclick="changeProfileImage()">Alterar Foto</a>
+                    <a href="#">Configurações</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Contato</a>
+                    <a id="logout-button" href="#">Sair</a>
+                </div>
+            </div>
+        </header>
+        <section id="preferences-content">
+            <h2>Conteúdo Baseado em Suas Preferências:</h2>
+            <div id="genre-list"></div>
+        </section>
+        <section id="books-section">
+            <h2>Livros Recomendados:</h2>
+            <div id="books-list"></div>
+        </section>
+        <section id="saved-books-section">
+            <h2>Livros Salvos:</h2>
+            <div id="saved-books-list"></div>
+        </section>
+        <section id="history-section">
+            <h2>Histórico de Livros Visualizados:</h2>
+            <div id="history-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>
